@@ -116,17 +116,14 @@ namespace FactoryMethodPatternExample
             if (documentName == "word")
             {
                 factory = new WordDocumentFactory();
-                factory.CreateDocument();
             }
             else if (documentName == "pdf")
             {
                 factory = new PdfDocumentFactory();
-                factory.CreateDocument();
             }
             else if (documentName == "excel")
             {
                 factory = new ExcelDocumentFactory();
-                factory.CreateDocument();
             }
             else
             {
