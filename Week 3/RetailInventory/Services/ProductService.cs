@@ -40,5 +40,17 @@ namespace RetailInventory.Services
             _productRepository.Add(product);
             Console.WriteLine($"Product {product.Name} added successfully.");
         }
+        public void FirstOrDefaultAsync()
+        {
+            var product = _productRepository.GetAll().FirstOrDefault(p => p.Price > 50000);
+            if (product != null)
+            {
+                Console.WriteLine($"Product ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
+            }
+            else
+            {
+                Console.WriteLine($" No Product is greater than 50000.");
+            }
+        }
     }
 }

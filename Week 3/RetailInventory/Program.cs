@@ -77,6 +77,7 @@ namespace RetailInventory
             productService.GetAllProductsAsync();
             productService.GetProductByIdAsync(11);
             productService.GetProductByIdAsync(12);
+            productService.FirstOrDefaultAsync();
         }
     }
 }

@@ -28,5 +28,17 @@ namespace RetailInventory.Repositories
             _context.Products.Add(product);
             _context.SaveChanges();
         }
+        public void FirstOrDefaultAsync()
+        {
+            var product = _context.Products.FirstOrDefault();
+            if (product != null)
+            {
+                Console.WriteLine($"Product ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
+            }
+            else
+            {
+                Console.WriteLine($"Product No Product is greater than 50000.");
+            }
+        }
     }
 }
