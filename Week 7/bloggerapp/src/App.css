@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  padding: 20px;
+}
+
+.section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.divider {
+  border-left: 4px solid green;
+}
